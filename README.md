@@ -7,6 +7,7 @@ This module contains training and evaluation code for pause-type detection model
 ### Directory structure
 
 ```
+gt_label/                 # manual pause-type annotations per audio clip (see note below)
 pause_type_detection/
   data/                    # dataloaders and metadata helpers
   models/                  # model architectures and losses
@@ -16,6 +17,8 @@ pause_type_detection/
   scripts/                 # entry points that parse config and run experiments
   utils/                   # generic utilities (e.g., random seed)
 ```
+
+Note: The corresponding audio files are available in the repository [data_after_cardio](https://github.com/Columbia-ICSL/data_after_cardio). Files in `gt_label` are manual annotations of pause types for each audio clip, where: `s` = semantic pause, `b` = breathing pause, `bs` = breathing and semantic pause, `o` = other (e.g., reading/talking), `p` = plosives, `l` = laughing. In our paper, we only use `s`, `b`, and `bs`, and map all other frames to `o`.
 
 ### Citation
 
