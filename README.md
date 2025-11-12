@@ -7,7 +7,7 @@ This module contains training and evaluation code for pause-type detection model
 ### Directory structure
 
 ```
-gt_label/                 # manual pause-type annotations per audio clip (see note below)
+gt_label/                  # manual pause-type annotations per audio clip (see note below)
 pause_type_detection/
   data/                    # dataloaders and metadata helpers
   models/                  # model architectures and losses
